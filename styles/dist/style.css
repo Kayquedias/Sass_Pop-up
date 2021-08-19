@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: linear-gradient(135deg, #182157, rgba(42, 80, 163, 0.801));
+  color: white;
+}
+
+.pop-up {
+  width: 55vw;
+  height: fit-content;
+  margin: 30vh auto;
+  background: black;
+  border-radius: 26px;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.623);
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  grid-template-rows: repeat(2, minmax(10vh, auto));
+}
+.pop-up img {
+  position: relative;
+  top: -55px;
+  left: 10%;
+}
+.pop-up .pop-up-content {
+  width: 22vw;
+  padding: 5%;
+}
+.pop-up .pop-up-content h2 {
+  width: 28vw;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: Montserrat;
+  margin: 30px 0 25px;
+}
+.pop-up .pop-up-content p {
+  width: 28vw;
+  font-size: 16px;
+  font-family: Montserrat;
+  line-height: 21px;
+}
