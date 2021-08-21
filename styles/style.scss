@@ -11,6 +11,7 @@
 body {
     background-image: linear-gradient(135deg, #182157, rgba(42, 80, 163, 0.801));
     color: white;
+    overflow: hidden;
 }
 
 // Container Pop-up
@@ -18,7 +19,7 @@ body {
 .pop-up {
     width: 55vw;
     height: fit-content;
-    margin: 25.65vh auto;
+    margin: 20vh auto 30vh;
     background: rgb(0, 0, 0);
 
     border-radius: 26px;
@@ -106,9 +107,70 @@ body {
         text-decoration: none;
         color: whitesmoke;
 
-        position: absolute;
-        top: 32%;
-        left: 75%;
+        position: relative;
+        top: -260px;
+        left: 570px;
 
+    }
+}
+
+// Animation 
+
+.pop-up {
+    animation: action 1.5s ease-in-out 2s backwards,
+        rotate 2s ease-in-out 5s forwards;
+    transform-origin: 570px 10px;
+
+}
+
+@keyframes action {
+    0% {
+        transform: translate(0, -450px);
+    }
+
+    20% {
+        transform: translate(0, 10px);
+    }
+
+    50% {
+        transform: translate(0, -5px);
+    }
+
+    60% {
+        transform: translate(0, 1px);
+    }
+
+    70% {
+        transform: translate(0, -3px);
+    }
+
+    80% {
+        transform: translate(0, 2px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0px);
+    }
+
+    40% {
+        transform: rotateZ(-65deg);
+    }
+
+    60% {
+        transform: rotateZ(-60deg);
+    }
+
+    80% {
+        transform: rotateZ(-65deg);
+    }
+
+    100% {
+        transform: rotateZ(-60deg);
     }
 }
