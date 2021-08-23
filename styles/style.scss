@@ -122,14 +122,14 @@ body {
 
 .pop-up {
     // animation: action 1.5s ease-in-out 2s backwards,
-    //    rotate 2s ease-in-out 5s forwards;
+    //     rotate 2s ease-in-out 5s forwards;
     transform-origin: 52.5vw 2vw;
 
 }
 
 @keyframes action {
     0% {
-        transform: translate(0, -450px);
+        transform: translate(0, -1000px);
     }
 
     20% {
@@ -191,13 +191,42 @@ body {
     }
 }
 
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1015px) and (min-width: 769px) {
 
     .pop-up {
+        width: 70vw;
+        transform-origin: 66.5vw 2vw;
+
         a {
-            top: -2.80in;
-            left: 51.5vw;
+            top: -2.45in;
+            left: 66.5vw;
         }
+
+        img {
+            top: -15px;
+            left: 25%;
+        }
+    }
+
+    .pop-up-content {
+        width: 40vw !important;
+        padding-left: 10vw !important;
+
+        h2 {
+            width: inherit !important;
+        }
+
+        p {
+            width: 35vw !important;
+        }
+    }
+
+    input:first-of-type {
+        font-size: 1.8vw !important;
+    }
+
+    input:last-of-type {
+        height: 7.5vh !important;
     }
 }
 
@@ -280,6 +309,8 @@ body {
         a {
             display: none;
         }
+
+        animation: action 1.5s ease-in-out 2s backwards
     }
 }
 
