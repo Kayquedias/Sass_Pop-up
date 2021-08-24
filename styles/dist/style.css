@@ -90,6 +90,7 @@ body {
 }
 
 .pop-up {
+  animation: action 1.5s ease-in-out 2s backwards, rotate 2s ease-in-out 5s forwards;
   transform-origin: 52.5vw 2vw;
 }
 
