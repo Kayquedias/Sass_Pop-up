@@ -1,6 +1,7 @@
 <h1 align="center" > Pop-up Animation</h1>
 
-![alt text](https://raw.githubusercontent.com/Kayquedias/Sass_Pop-up/master/path/to/img.png)
+
+<p align="center" ><img src='https://github.com/Kayquedias/Sass_Pop-up/blob/master/Imagens/preview-img.png'></p>
 
 <p align="center" > Pequeno pop-up de registro com uma animação. </p>
 
